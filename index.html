@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Saphir Detailing — Atelier à Seix</title>
+  <link rel="stylesheet" href="styles.css" />
+  <meta name="description" content="Saphir Detailing — detailing automobile en atelier. Lavage, polissage, protection céramique." />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <img src="assets/logo.png" alt="Saphir Detailing" class="logo" />
+        <div class="brand-text">Saphir Detailing</div>
+      </div>
+      <nav class="nav">
+        <a href="#accueil">Accueil</a>
+        <a href="#services">Services</a>
+        <a href="#galerie">Galerie</a>
+        <a href="#avis">Avis</a>
+        <a href="#contact" class="cta">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="accueil" class="container">
+    <section class="hero">
+      <div class="hero-left">
+        <h1>Saphir Detailing</h1>
+        <p class="lead">Atelier de detailing automobile — Pont de la Taule, 09140 Seix. Traitements longue durée, polissage professionnel et protection céramique.</p>
+        <div class="hero-actions">
+          <a href="#contact" class="btn btn-primary">Réserver un RDV</a>
+          <a href="#galerie" class="btn btn-outline">Voir la galerie</a>
+        </div>
+        <p class="muted">Atelier uniquement — merci de prendre rendez-vous.</p>
+      </div>
+      <div class="hero-right">
+        <div class="card logo-card">
+          <img src="assets/logo.png" alt="Logo" />
+          <div class="card-body">
+            <h3>Excellence & soin</h3>
+            <p>Polissage, correction et protections professionnelles pour sublimer votre véhicule.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="services">
+      <h2>Services</h2>
+      <p class="muted">Prestations réalisées uniquement en atelier. Tarifs indicatifs — devis sur demande.</p>
+      <div class="grid-3">
+        <div class="card service-card">
+          <h3>Lavage & Décontamination</h3>
+          <p>Lavage à la main, décontamination ferreuse, nettoyage des jantes et pneus.</p>
+          <div class="price">À partir de 40€</div>
+        </div>
+        <div class="card service-card">
+          <h3>Polissage & Correction</h3>
+          <p>Correction des défauts (micro-rayures, hologrammes) et polissage multi-étapes.</p>
+          <div class="price">Devis sur demande</div>
+        </div>
+        <div class="card service-card">
+          <h3>Protection Céramique</h3>
+          <p>Revêtement hydrophobe longue durée, protection UV et brillance durable.</p>
+          <div class="price">À partir de 250€</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="galerie" class="gallery">
+      <h2>Galerie</h2>
+      <p class="muted">Ajoute tes photos dans le dossier <code>/public/gallery/</code> (ex : 01.jpg, 02.jpg, ...).</p>
+      <div class="grid-3">
+        <!-- Placeholder images: remplacez par /public/gallery/01.jpg etc. -->
+        <div class="thumb"><img src="https://picsum.photos/seed/saphir1/800/600" alt="exemple 1" /></div>
+        <div class="thumb"><img src="https://picsum.photos/seed/saphir2/800/600" alt="exemple 2" /></div>
+        <div class="thumb"><img src="https://picsum.photos/seed/saphir3/800/600" alt="exemple 3" /></div>
+      </div>
+    </section>
+
+    <section id="avis" class="testimonials">
+      <h2>Avis clients</h2>
+      <div class="grid-2">
+        <div class="card">
+          <strong>Julien</strong>
+          <p>Travail impeccable, la voiture a l'air neuve !</p>
+        </div>
+        <div class="card">
+          <strong>Aurélie</strong>
+          <p>Professionnel et soigneux, je recommande.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <h2>Contact & Localisation</h2>
+      <div class="grid-2">
+        <form class="card contact-card" action="mailto:saphir.detailing@gmail.com" method="post" enctype="text/plain">
+          <label>Nom</label>
+          <input type="text" name="Nom" placeholder="Votre nom" required />
+          <label>Email</label>
+          <input type="email" name="Email" placeholder="votre@mail.com" required />
+          <label>Message</label>
+          <textarea name="Message" rows="5" placeholder="Parlez-moi du service souhaité..." required></textarea>
+          <div class="form-actions">
+            <button type="submit" class="btn btn-primary">Envoyer</button>
+            <a class="btn btn-outline" href="mailto:saphir.detailing@gmail.com">Envoyer via messagerie</a>
+          </div>
+        </form>
+
+        <aside class="card">
+          <h3>Infos</h3>
+          <p>Email: <a href="mailto:saphir.detailing@gmail.com">saphir.detailing@gmail.com</a><br/>Téléphone: <a href="tel:+33668840627">06 68 84 06 27</a></p>
+          <h4>Localisation</h4>
+          <div class="mapwrap">
+            <iframe
+              title="Saphir Detailing - Localisation"
+              src="https://www.google.com/maps?q=Pont+de+la+Taule,+09140+Seix&output=embed"
+              frameborder="0" style="border:0" allowfullscreen="">
+            </iframe>
+          </div>
+          <p class="muted">Atelier uniquement — merci de prendre rendez-vous.</p>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>© 2025 Saphir Detailing</div>
+      <div>Made with care</div>
+    </div>
+  </footer>
+
+</body>
+</html>
